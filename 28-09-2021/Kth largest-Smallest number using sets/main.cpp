@@ -4,18 +4,18 @@ using namespace std;
 
 int kLargest(int a[],int length,int k){
     set<int> s(a,a+length);
-    set<int>::iterator it=s.begin();
-    for(int i=0;i<k-1;i++){
-        it++;
+    set<int>::iterator it=s.end();
+    for(int i=0;i<k;i++){
+        it--;
     }
     return *it;
 }
 
 int kSmallest(int a[],int length,int k){
     set<int> s(a,a+length);
-    set<int>::iterator it=s.end();
+    set<int>::iterator it=s.begin();
     for(int i=0;i<k-1;i++){
-        it--;
+        it++;
     }
     return *it;
 }
