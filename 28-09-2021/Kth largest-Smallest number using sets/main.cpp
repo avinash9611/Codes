@@ -27,7 +27,7 @@ int main()
     int k=4;
     int kLarge=kLargest(a,l,k);
     int kSmall=kSmallest(a,l,k);
-    cout<<k<<" th smallest number is:"<<kLarge<<endl;
-    cout<<k<<" th largest number is:"<<kSmall<<endl;
+    cout<<k<<" th Largest number is:"<<kLarge<<endl;
+    cout<<k<<" th smallest number is:"<<kSmall<<endl;
     return 0;
 }
